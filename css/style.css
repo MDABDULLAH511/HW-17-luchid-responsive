@@ -1,0 +1,702 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* header part css */
+header {
+    background-image: url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link.active::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover::before,
+::after {
+    width: 45%;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover::after {
+    width: 45%;
+}
+
+
+/* Banner part css */
+.banner_img_phone {
+    display: none;
+
+
+}
+
+.banner_content {
+
+    min-height: 88vh;
+    align-items: center;
+    position: relative;
+}
+
+.banner_content h6 {
+
+    color: #008ed6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner_content h1 {
+
+    color: #fff;
+    margin: 25px 0;
+}
+
+.banner_content p {
+
+    color: #999999;
+}
+
+.btn_download {
+
+    color: #fff;
+    background-color: #008ed6;
+    padding: 0;
+    text-transform: uppercase;
+    padding: 11px 15px;
+    border: 1px solid #008ed6;
+    margin-top: 70px;
+    transition: .5s all ease-in-out;
+}
+
+.btn_download:focus {
+    box-shadow: none;
+}
+
+.btn_download:hover {
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn_features {
+
+    color: #fff;
+    background-color: transparent;
+    padding: 0;
+    text-transform: uppercase;
+    padding: 11px 15px;
+    border: 1px solid #008ed6;
+    margin-left: 20px;
+    margin-top: 70px;
+    transition: .5s all ease-in-out;
+}
+
+.btn_features:focus {
+    box-shadow: none;
+}
+
+.btn_features:hover {
+
+    color: #fff;
+    background-color: #008ed6;
+}
+
+.banner_img {
+
+    position: absolute;
+
+    bottom: 0;
+
+    right: -3%;
+}
+
+/* features_part css */
+.features_part {
+    padding: 48px 0;
+}
+
+.features_part h6 {
+
+    color: #008ed6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.features_part h1 {
+    color: #1a1a1a;
+    margin: 6px 0 20px 0;
+}
+
+.features_part span {
+    display: block;
+    margin: auto;
+    width: 10%;
+    height: 3px;
+    position: relative;
+}
+
+.features_part span::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+
+.features_part span::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+.features_part:hover span::before {
+    width: 45%;
+}
+
+.features_part:hover span::after {
+    width: 45%;
+}
+
+.features_icon {
+    color: #008ed6;
+    font-size: 28px;
+    border: 1px solid #999999;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    line-height: 70px;
+    margin: auto;
+}
+
+.features_part h3 {
+    color: #1a1a1a;
+    margin: 21px 0 15px 0;
+}
+
+
+.features_part p {
+    color: #999999;
+}
+
+/* details_part css */
+.details_part {
+    border-top: 1px solid #f2f2f2;
+}
+
+.phone {
+
+    width: 70%;
+    margin: auto;
+}
+
+.details_part h6 {
+
+    color: #008ed6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.details_part h1 {
+
+    color: #1a1a1a;
+    margin: 6px 0 20px 0;
+}
+
+.details_part span {
+
+    display: block;
+    width: 20%;
+    height: 3px;
+    position: relative;
+}
+
+.details_part span::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+
+.details_part span::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+
+.details_part:hover span::before {
+    width: 45%;
+}
+
+.details_part:hover span::after {
+    width: 45%;
+}
+
+.details_part p {
+    color: #999999;
+    margin: 30px 0px 40px 0;
+}
+
+.details_part ul {
+
+    list-style: none;
+}
+
+.details_part ul li {
+
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.details_icon {
+
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #008ed6;
+    margin-right: 8px;
+}
+
+/* details_part 02 css */
+.details_part_02 {
+    background-color: #f2f2f2;
+}
+
+.phone_2 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.details_part_02:hover ::before {
+    width: 45%;
+}
+
+.details_part_02:hover ::after {
+    width: 45%;
+}
+
+/* testimonial_part css */
+.testimonial_part {
+    background-image: url(../image/testimonial.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial_part h1 {
+    color: #ffffff;
+}
+
+.testimonial_part:hover span::before {
+    width: 45%;
+}
+
+.testimonial_part:hover span::after {
+    width: 45%;
+}
+
+.testimonial_content {
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial_part p {
+    color: #ffffff;
+    font-style: italic;
+    margin: 30px 0 25px 0;
+}
+
+
+.client_det h4 {
+
+    font-size: 22px;
+
+}
+
+.client_photo {
+
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+/* owl carousel dots css */
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.owl-dots .owl-dot {
+
+    margin-right: 10px;
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    height: 7px;
+    width: 7px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #999999;
+}
+
+.owl-dots .active span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #ffffff;
+}
+
+/*   *Optional (nav/aroow)* 
+}
+.owl-nav{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.owl-nav .owl-prev{
+    top: 50%;
+    position: absolute;
+    left: -30px;
+    transform: translateY(-50px);
+}
+
+.owl-nav .owl-next{
+    top: 50%;
+    position: absolute;
+    right: -30px;
+    transform: translateY(-50px);
+} */
+
+
+/* like_what Css */
+.like_what {
+
+    background-color: #15141a;
+    color: #ffffff;
+}
+
+.like_what span {
+
+    font-weight: 300;
+}
+
+.like_what .btn_features {
+
+    margin: 0;
+}
+
+.like_what .btn_download {
+
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Pricings & Plans part css */
+
+.pricings:hover span::before {
+    width: 45%;
+}
+
+.pricings:hover span::after {
+    width: 45%;
+}
+
+/* .price_table */
+.price_table {
+
+    border: 1px solid #999999;
+    margin-bottom: 10px;
+}
+
+.price_table h4 {
+
+    font-weight: 600;
+    padding: 7px 0;
+    border-bottom: 1px solid #999999;
+    transition: .3s all ease-in-out;
+}
+
+.price_table:hover h4 {
+    color: #008ed6;
+}
+
+.price {
+
+    border-bottom: 1px solid #999999;
+    padding: 30px 0;
+    transition: .3s all ease-in-out;
+}
+
+.price h1 {
+
+    font-weight: 600;
+}
+
+
+.price h1 sup {
+
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.price h6 {
+    color: #999999;
+    transition: .3s all ease-in-out;
+}
+
+.price_table:hover .price {
+    background-color: #008ed6;
+    color: #ffffff;
+}
+
+.price_table:hover .price h6 {
+    color: #ffffff;
+}
+
+
+.price_table p {
+
+    color: #999999;
+    padding: 0 28px;
+    margin: 27px 0;
+}
+
+.price_table p span {
+    color: #008ed6;
+}
+
+.price_table a {
+    padding: 0;
+    padding: 10px 25px;
+    border: 1px solid #999999;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: #008ed6;
+    transition: .3s all ease-in-out;
+}
+
+.price_table:hover a {
+    background-color: #008ed6;
+    color: #ffffff;
+}
+
+/* contact_part css */
+.contact_part {
+    background-color: #ededed;
+    padding-bottom: 300px;
+    position: relative;
+}
+
+.contact_part .features_part {
+    padding: 0 0 40px 0;
+}
+
+.contact_part:hover span::before {
+    width: 45%;
+}
+
+.contact_part:hover span::after {
+    width: 45%;
+}
+
+.concact p {
+
+    color: #999999;
+    margin-top: 15px;
+}
+
+.contact_phone {
+    font-size: 25px;
+    color: #008ed6;
+    margin-top: 40px;
+}
+
+.concact a {
+    color: #999999;
+    text-decoration: none;
+}
+
+
+/* contact_form css */
+.contact_form {
+
+    background-color: #000;
+    padding: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+.contact_form input {
+
+    background: transparent;
+    color: #999999;
+    border: 1px solid #999999;
+}
+
+.contact_form input:focus {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #999999;
+    color: #fff;
+}
+
+.contact_form input::placeholder {
+    color: #999;
+}
+
+.contact_form textarea {
+
+    background: transparent;
+    color: #999999;
+    border: 1px solid #999999;
+
+}
+
+.contact_form textarea:focus {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid #999999;
+    color: #fff;
+}
+
+.contact_form textarea::placeholder {
+    color: #999;
+}
+
+.contact_form input[type="submit"] {
+
+    background: #008ed6;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* google map */
+iframe {
+    display: block;
+}
+
+/* footer css */
+footer {
+    padding: 20px 0;
+    background: #000000;
+}
+
+.social_midea ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.social_midea ul li {
+
+    margin-right: 15px;
+}
+
+.social_midea ul li a {
+
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    transition: .2s all ease-in-out;
+}
+
+.social_midea ul li a:hover {
+
+    color: #008ed6;
+}
+
+footer p {
+    color: #999999;
+    text-align: center;
+    text-transform: uppercase;
+}
